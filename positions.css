@@ -1,0 +1,60 @@
+.parent{
+    height: 400px;
+    width: 400px;
+    border: 1px solid rgb(199, 64, 64);
+    position: relative;
+    left: 200px;
+    /* here I need not write margin-left instead I can write left or we can even write margin:auto */
+}
+/* .child{
+    height: 50px;
+    width: 50px;
+   background-color: rgb(0,128,0);
+    position:absolute;
+    top:0;
+    left: 50%;
+} */
+/* .child{
+    height: 50px;
+    width: 50px;
+   background-color: rgb(0,128,0);
+    position:absolute;
+    top:0;
+    right: 0;
+} */
+/* .child{
+    height: 50px;
+    width: 50px;
+   background-color: rgb(0,128,0);
+    position:absolute;
+    bottom:0;
+    left:0;
+} */
+/* .child{
+    height: 50px;
+    width: 50px;
+   background-color: rgb(0,128,0);
+    position:absolute;
+    bottom:0;
+   right: 50%;
+} */
+/* .child{
+    height: 50px;
+    width: 50px;
+   background-color: rgb(0,128,0);
+    position:absolute;
+    bottom:0;
+    right: 0;
+} */
+/* To bring it to center of parent */
+.child{
+    height: 50px;
+    width: 50px;
+   background-color: rgb(0,128,0);
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* 1st -50% is for horizontal half its width and 2nd  -50% is vertical halfing its height */
+}
+/* If I don't write position relative in parent then it assumes root element as parent i.e global(i think) for this example */
