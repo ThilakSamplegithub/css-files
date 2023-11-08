@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div{
+            padding:10px;
+            border:1px solid;
+            margin: 10px;
+        }
+        #div1>p{
+            border:1px dotted blue;
+            display: block;
+            height: 30px;
+            width:30%
+        }
+        #div2>p{
+            border:1px dotted blue;
+            display: inline;
+            height: 30px;
+            width:30%
+        }
+        #div3>p{
+            border:1px dotted blue;
+            display: inline-block;
+            height: 30px;
+            width:30%
+        }
+        div{
+            display: inline-block;
+        }
+    </style>
+    <title>Display</title>
+</head>
+<body>
+    <div id="div1">This is block-level element <p>This is paragraph inline for div1</p> and this is outside ptag </div>
+    <div id="div2">This is block-level element <p>This is paragraph inline for div2</p> and this is outside ptag </div>
+    <div id="div3">This is block-level element <p>This is paragraph inline for div3</p> and this is outside ptag </div>
+</body>
+</html>
