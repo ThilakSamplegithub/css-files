@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .container{
+            width:100%;
+            height:100vh;
+            border:1px solid magenta;
+            /* position:absolute */
+        }
+        .container div{
+           /* position: relative; */
+           height: 100%;
+           width: 100%;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           /* transform: translate(-50%,-50%); */
+        }
+        .container div>img{
+            transition: all 1s linear;
+        }
+        .container div>img:hover{
+            /* scale:2; */
+            /* Both tilted but both are not same */
+            transform:translate(10px) rotate(-40deg) scale(1.6) 
+           /* transform: rotate3d(0.95,0.5,1,45deg); */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLygGeO-2wp2w7b7eFCtVNzpvYWzqV1bkZWg&usqp=CAU" alt="error">
+        </div>
+    </div>
+</body>
+</html>
