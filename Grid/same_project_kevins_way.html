@@ -15,7 +15,7 @@
             color:white;
             background-color: #444;
             display: grid;
-            grid-template-columns: repeat(2,1fr);
+            /*grid-template-columns: repeat(2,1fr);*/
             grid-template-rows: 64px 1fr 64px;
             gap:10px;
             /* Always use this template areas for complex layouts 
@@ -44,7 +44,6 @@
         @media (width<=768px){
 
             body{
-            grid-template-columns:1fr;
             grid-template-rows: 64px 1fr 1fr 64px;
             grid-template-areas:
                                 "Header"
