@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        /* This will see whole content .All grid items are only
+        */
+        .container{
+            height:600px;
+            width:80%;
+            display: grid;
+            gap:20px;
+            grid-template-columns: repeat(3,200px);
+           /*justify-content:end;
+           align-content: center;*/
+           place-content: center end;
+            border:2px solid red;
+            margin: auto;
+        }
+        .item{
+            border:1px solid black;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item Item">Item 1</div>
+        <div class="item Item">Item 2</div>
+        <div class="item Item">Item 3</div>
+        <div class="item Item">Item 4</div>
+        <div class="item Item">Item 5</div>
+        <div class="item Item">Item 6</div>
+        <div class="item Item">Item 7</div>
+        <div class="item Item">Item 8</div>
+        <div class="item Item">Item 9</div>
+        <div class="item Item">Item 10</div>
+        <div class="item Item">Item 11</div>
+        <div class="item Item">Item 12</div>
+    </div>
+</body>
+</html>

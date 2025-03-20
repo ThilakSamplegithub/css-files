@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanning_project</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            color:white;
+            background-color: #444;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 64px 1fr 64px;
+            gap:10px;
+        }
+        header,footer,aside,main{
+            border:2px solid
+        }
+        header,footer{
+           grid-column: 1/-1; 
+        }
+        
+        @media (width<=768px){
+
+            body{
+            grid-template-columns:1fr;
+            grid-template-rows: 64px 1fr 1fr 64px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <main>Main Content</main>
+    <aside>Sidebar</aside>
+    <footer>Footer</footer>
+</body>
+</html>

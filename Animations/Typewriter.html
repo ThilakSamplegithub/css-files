@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            position:relative;
+            border:0px solid red;
+            height: 100vh;
+            width: 100%;
+        }
+
+        .container{
+            height: 50vh;
+            border:0px solid red;
+            width: 50%;
+            font-size: 50px;
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container"></div>
+</body>
+<script>
+    const title=document.querySelector(".container")
+ let typeName="Thilak Singh Thakur"
+ let index=1
+ function typeWriter(){
+  let text=typeName.slice(0,index)
+  title.innerText=text
+ index===typeName.length+1?index=1:index++
+//   index++
+  setTimeout(()=>typeWriter(),100)
+ }
+ typeWriter()
+</script>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanning_project</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            color:white;
+            background-color: #444;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 64px 1fr 64px;
+            gap:10px;
+            grid-template-areas:
+                                "Header Header"
+                                "Content Sidebar"
+                                "Footer Footer";
+        }
+        header,footer,aside,main{
+            border:2px solid
+        }
+        header{
+            grid-area: Header;
+        }
+        main{
+            grid-area: Content;
+        }
+        aside{
+            grid-area: Sidebar;
+        }
+        footer{
+            grid-area: Footer;
+        }
+        @media (width<=768px){
+
+            body{
+            grid-template-columns:1fr;
+            grid-template-rows: 64px 1fr 1fr 64px;
+            grid-template-areas:
+                                "Header"
+                                "Content"
+                                "Sidebar"
+                                "Footer";
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <main>Main Content</main>
+    <aside>Sidebar</aside>
+    <footer>Footer</footer>
+</body>
+</html>
